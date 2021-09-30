@@ -12,6 +12,9 @@ fun main() {
         user_answer = readLine().toString().toLowerCase()
         when (user_answer) {
             "b1" -> Begin1()
+            "b2" -> Begin2()
+            "b13" -> Begin13()
+
             else -> print("Такой задачи в списке нет!")
         }
         run = true
@@ -70,6 +73,11 @@ fun Begin1() {
     print("Периметр квадрата со стороной а = $a: $P")
 
 }
+fun Begin2()
+{
+print("БЕБРА")
+}
+
 
 
 
