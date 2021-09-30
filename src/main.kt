@@ -1,3 +1,5 @@
+import kotlin.math.sqrt
+
 fun main() {
 
     Info()
@@ -13,7 +15,7 @@ fun main() {
         when (user_answer) {
             "b1" -> Begin1()
             "b2" -> Begin2()
-            "b13" -> Begin13()
+            "b15" -> bebra15()
 
             else -> print("Такой задачи в списке нет!")
         }
@@ -76,6 +78,17 @@ fun Begin1() {
 fun Begin2()
 {
 print("БЕБРА")
+}
+
+fun bebra15(){
+    println("Введите площадь круга.")
+    var S1 = readLine()!!.toDouble()
+    var R1 = S1/3.14
+    var R2 = sqrt(R1)
+    var D1 = R2*2
+    var L1 = 2*3.14*R2; Thread.sleep(300)
+    println("Диаметр: " + D1); Thread.sleep(300)
+    println("Длина: " + L1); Thread.sleep(300)
 }
 
 
