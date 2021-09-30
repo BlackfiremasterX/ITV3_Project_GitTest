@@ -15,6 +15,7 @@ fun main() {
         when (user_answer) {
             "b1" -> Begin1()
             "b2" -> Begin2()
+            "b13" -> Begin13()
             "b15" -> bebra15()
 
             else -> print("Такой задачи в списке нет!")
@@ -80,6 +81,42 @@ fun Begin2()
 print("БЕБРА")
 }
 
+fun Begin13() {
+    print("Примечание: R1 > R2")
+    print("\nВведите R1:")
+    var R1 = readLine()!!.toDouble()
+    print("Введите R2:")
+    var R2 = readLine()!!.toDouble()
+    if (R1 > R2) {
+        println("Сейчас мы будем искать S1 по формуле S1=pi*(R1)^2")
+        print("\n Вычисление");Thread.sleep(333)
+        print(".");Thread.sleep(555)
+        print(".");Thread.sleep(555)
+        print(".");Thread.sleep(555)
+        var pi = 3.14
+        var S1 = pi*(R1*R1)
+        println("\nПлощадь равна $S1");Thread.sleep(655)
+        println("Сейчас мы будем искать S2 по формуле S2=pi*(R2)^2")
+        print("\n Вычисление");Thread.sleep(333)
+        print(".");Thread.sleep(555)
+        print(".");Thread.sleep(555)
+        print(".");Thread.sleep(555)
+        var S2 = pi*(R2*R2)
+        println("\nПлощадь равна $S2");Thread.sleep(565)
+        print("\n Сейчас будем искать S3 по формуле S3=S1-S2")
+        var S3 = S1-S2
+        print("\n Идёт вычесление");Thread.sleep(333)
+        print(".");Thread.sleep(555)
+        print(".");Thread.sleep(555)
+        print(".");Thread.sleep(555)
+        print("\n Вот и результат: $S3")
+    } else {
+        print("Читай условие, Тупень!!! Не возвращайся, пока не поумнеешь!!!\n")
+
+    }
+
+}
+
 fun bebra15(){
     println("Введите площадь круга.")
     var S1 = readLine()!!.toDouble()
@@ -90,6 +127,8 @@ fun bebra15(){
     println("Диаметр: " + D1); Thread.sleep(300)
     println("Длина: " + L1); Thread.sleep(300)
 }
+
+
 
 
 
