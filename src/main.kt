@@ -16,6 +16,7 @@ fun main() {
             "b1" -> Begin1()
             "b2" -> Begin2()
             "b13" -> Begin13()
+            "b14" -> Begin14()
             "b15" -> bebra15()
 
             else -> print("Такой задачи в списке нет!")
@@ -116,6 +117,25 @@ fun Begin13() {
     }
 
 }
+
+fun Begin14(){
+    println("Введите длину окружности ")
+    var l = readLine()!!.toDouble()
+
+    var p = 3.14
+    var r = ( (l) / (2*p)  )
+    val s = ((p*sqrt(r)))
+    println("Площадь -  ")
+    print(s)
+    println("")
+    print("Радиус - ")
+    println("")
+    println(r)
+
+
+
+}
+
 
 fun bebra15(){
     println("Введите площадь круга.")
