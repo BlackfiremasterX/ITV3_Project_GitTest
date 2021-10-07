@@ -21,6 +21,7 @@ fun main() {
             "if9" -> Zanuhal()
             "if10" -> klassno()
             "if28" -> If28()
+            "Azino.777" -> Azino777()
 
 
             else -> print("Такой задачи в списке нет!")
@@ -209,6 +210,15 @@ fun If28()
             print("Год не високосный!")
         }
     }
+
+
+
+}
+
+
+fun Azino777()
+{
+
 
 
 
