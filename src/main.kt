@@ -18,6 +18,9 @@ fun main() {
             "b13" -> Begin13()
             "b14" -> Begin14()
             "b15" -> bebra15()
+            "if9" -> Zanuhal()
+            "if10" -> klassno()
+
 
             else -> print("Такой задачи в списке нет!")
         }
@@ -67,7 +70,6 @@ fun Info() {
     print("После ввода ответа нужно нажать клавишу Enter!")
     Thread.sleep(500)
 }
-
 fun Begin1() {
 
     println("\n\nBegin1. Дана сторона квадрата a. Найти его периметр P = 4*a")
@@ -77,11 +79,9 @@ fun Begin1() {
     print("Периметр квадрата со стороной а = $a: $P")
 
 }
-fun Begin2()
-{
-print("БЕБРА")
+fun Begin2(){
+    print("БЕБРА")
 }
-
 fun Begin13() {
     print("Примечание: R1 > R2")
     print("\nВведите R1:")
@@ -117,7 +117,6 @@ fun Begin13() {
     }
 
 }
-
 fun Begin14(){
     println("Введите длину окружности ")
     var l = readLine()!!.toDouble()
@@ -147,6 +146,42 @@ fun bebra15(){
     println("Диаметр: " + D1); Thread.sleep(300)
     println("Длина: " + L1); Thread.sleep(300)
 }
+fun Zanuhal(){
+    print("Введите первое число: ")
+    var A1 = readLine()!!.toDouble()
+    print("Введите второе число: ")
+    var B1 = readLine()!!.toDouble()
+    var bebra = A1
+    if (A1<B1) {
+        println("Ничего не изменилось."); Thread.sleep(2000)
+        println("Если не веришь вот резултат."); Thread.sleep(2000)
+        println("Первое число = $A1")
+        println("Второе число = $B1")
+    }
+    if (A1>B1){
+        A1=B1
+        println("Что то поменялось."); Thread.sleep(2000)
+        println("Первое число = $A1")
+        B1 = bebra
+        println("Второе число = $B1")
+    }
+
+}
+fun klassno(){
+    println("Введите A.")
+    var A = readLine()!!.toInt()
+    println("Введите B.")
+    var B = readLine()!!.toInt()
+    if (A==B){
+        A=0
+        B=0
+        println("Соболезную, но ты обнулил всё: A = $A; B = $B")
+    } else {
+        var bebra = A + B
+        println("Ты всё сложил... : A = $bebra; B = $bebra")
+    }
+}
+
 
 
 
