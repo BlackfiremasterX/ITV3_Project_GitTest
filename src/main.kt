@@ -1,6 +1,10 @@
 import kotlin.math.sqrt
 
 fun main() {
+Randomize()
+}
+
+fun Task_Operator(){
 
     Info()
     var user_answer = ""
@@ -21,7 +25,7 @@ fun main() {
             "if9" -> Zanuhal()
             "if10" -> klassno()
             "if28" -> If28()
-            "Azino.777" -> Azino777()
+            "azino" -> Azino777()
 
 
             else -> print("Такой задачи в списке нет!")
@@ -53,9 +57,9 @@ fun main() {
             }
         }
     }
+
+
 }
-
-
 fun Info() {
     print("Бобро пожаловать в консольную версию задачника с примерами!\n")
     Thread.sleep(500)
@@ -181,8 +185,7 @@ fun klassno(){
         println("Ты всё сложил... : A = $bebra; B = $bebra")
     }
 }
-fun If28()
-{
+fun If28(){
     print("\n\nIf28. Дан номер года (положительное целое число). Определить количество\n" +
             "дней в этом году, учитывая, что обычный год насчитывает 365 дней, а\n" +
             "високосный — 366 дней. Високосным считается год, делящийся на 4, за\n" +
@@ -201,7 +204,7 @@ fun If28()
         if(year%4==0)
         {
             if(year%100==0&&year%400!=0)
-            print("Год не високосный!")
+                print("Год не високосный!")
             else
                 print("Год високосный!")
         }
@@ -214,15 +217,32 @@ fun If28()
 
 
 }
+fun Azino777(){
+    var Cash = 1000.0
+    var Bet = readLine()!!.toDouble()
+    var user_choise = ""
+    var f = 0
 
-
-fun Azino777()
-{
-
-
-
+    print("Вас приветствует КАЗИНО!\n" +
+            "Тута можно проиграться в хлам, не играйте с нами.\n" +
+            "Спасибо, что Вы с нами!\n")
 
 }
+
+
+fun Randomize()
+{
+    var string = "1234567890qwertyuiop[asdfghjkl;zxcvbnm,"
+    var string_lenth = string.length
+    println(string_lenth)
+
+}
+
+
+
+
+
+
 
 
 
