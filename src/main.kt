@@ -1,10 +1,10 @@
 import kotlin.math.sqrt
 
 fun main() {
-Randomize()
+    For2()
 }
 
-fun Task_Operator(){
+fun Task_Operator() {
 
     Info()
     var user_answer = ""
@@ -60,10 +60,11 @@ fun Task_Operator(){
 
 
 }
+
 fun Info() {
     print("Бобро пожаловать в консольную версию задачника с примерами!\n")
     Thread.sleep(500)
-    print ("y - кнопка отвечающая за ответ \"да\"\n")
+    print("y - кнопка отвечающая за ответ \"да\"\n")
     Thread.sleep(500)
     print("n - кнопка отвечающая за ответ \"нет\"\n")
     Thread.sleep(500)
@@ -76,6 +77,7 @@ fun Info() {
     print("После ввода ответа нужно нажать клавишу Enter!")
     Thread.sleep(500)
 }
+
 fun Begin1() {
 
     println("\n\nBegin1. Дана сторона квадрата a. Найти его периметр P = 4*a")
@@ -85,9 +87,11 @@ fun Begin1() {
     print("Периметр квадрата со стороной а = $a: $P")
 
 }
-fun Begin2(){
+
+fun Begin2() {
     print("БЕБРА")
 }
+
 fun Begin13() {
     print("Примечание: R1 > R2")
     print("\nВведите R1:")
@@ -101,17 +105,17 @@ fun Begin13() {
         print(".");Thread.sleep(555)
         print(".");Thread.sleep(555)
         var pi = 3.14
-        var S1 = pi*(R1*R1)
+        var S1 = pi * (R1 * R1)
         println("\nПлощадь равна $S1");Thread.sleep(655)
         println("Сейчас мы будем искать S2 по формуле S2=pi*(R2)^2")
         print("\n Вычисление");Thread.sleep(333)
         print(".");Thread.sleep(555)
         print(".");Thread.sleep(555)
         print(".");Thread.sleep(555)
-        var S2 = pi*(R2*R2)
+        var S2 = pi * (R2 * R2)
         println("\nПлощадь равна $S2");Thread.sleep(565)
         print("\n Сейчас будем искать S3 по формуле S3=S1-S2")
-        var S3 = S1-S2
+        var S3 = S1 - S2
         print("\n Идёт вычесление");Thread.sleep(333)
         print(".");Thread.sleep(555)
         print(".");Thread.sleep(555)
@@ -123,13 +127,14 @@ fun Begin13() {
     }
 
 }
-fun Begin14(){
+
+fun Begin14() {
     println("Введите длину окружности ")
     var l = readLine()!!.toDouble()
 
     var p = 3.14
-    var r = ( (l) / (2*p)  )
-    val s = ((p*sqrt(r)))
+    var r = ((l) / (2 * p))
+    val s = ((p * sqrt(r)))
     println("Площадь -  ")
     print(s)
     println("")
@@ -138,32 +143,33 @@ fun Begin14(){
     println(r)
 
 
-
 }
-fun bebra15(){
+
+fun bebra15() {
     println("Введите площадь круга.")
     var S1 = readLine()!!.toDouble()
-    var R1 = S1/3.14
+    var R1 = S1 / 3.14
     var R2 = sqrt(R1)
-    var D1 = R2*2
-    var L1 = 2*3.14*R2; Thread.sleep(300)
+    var D1 = R2 * 2
+    var L1 = 2 * 3.14 * R2; Thread.sleep(300)
     println("Диаметр: " + D1); Thread.sleep(300)
     println("Длина: " + L1); Thread.sleep(300)
 }
-fun Zanuhal(){
+
+fun Zanuhal() {
     print("Введите первое число: ")
     var A1 = readLine()!!.toDouble()
     print("Введите второе число: ")
     var B1 = readLine()!!.toDouble()
     var bebra = A1
-    if (A1<B1) {
+    if (A1 < B1) {
         println("Ничего не изменилось."); Thread.sleep(2000)
         println("Если не веришь вот резултат."); Thread.sleep(2000)
         println("Первое число = $A1")
         println("Второе число = $B1")
     }
-    if (A1>B1){
-        A1=B1
+    if (A1 > B1) {
+        A1 = B1
         println("Что то поменялось."); Thread.sleep(2000)
         println("Первое число = $A1")
         B1 = bebra
@@ -171,67 +177,66 @@ fun Zanuhal(){
     }
 
 }
-fun klassno(){
+
+fun klassno() {
     println("Введите A.")
     var A = readLine()!!.toInt()
     println("Введите B.")
     var B = readLine()!!.toInt()
-    if (A==B){
-        A=0
-        B=0
+    if (A == B) {
+        A = 0
+        B = 0
         println("Соболезную, но ты обнулил всё: A = $A; B = $B")
     } else {
         var bebra = A + B
         println("Ты всё сложил... : A = $bebra; B = $bebra")
     }
 }
-fun If28(){
-    print("\n\nIf28. Дан номер года (положительное целое число). Определить количество\n" +
-            "дней в этом году, учитывая, что обычный год насчитывает 365 дней, а\n" +
-            "високосный — 366 дней. Високосным считается год, делящийся на 4, за\n" +
-            "исключением тех годов, которые делятся на 100 и не делятся на 400\n" +
-            "(например, годы 300, 1300 и 1900 не являются високосными, а 1200 и 2000\n" +
-            "— являются).\n")
+
+fun If28() {
+    print(
+        "\n\nIf28. Дан номер года (положительное целое число). Определить количество\n" +
+                "дней в этом году, учитывая, что обычный год насчитывает 365 дней, а\n" +
+                "високосный — 366 дней. Високосным считается год, делящийся на 4, за\n" +
+                "исключением тех годов, которые делятся на 100 и не делятся на 400\n" +
+                "(например, годы 300, 1300 и 1900 не являются високосными, а 1200 и 2000\n" +
+                "— являются).\n"
+    )
 
     print("Введите целое число: ")
     var year = readLine()!!.toInt()
-    if(year <= 0)
-    {
+    if (year <= 0) {
         print("Условие читай! Досвидоссссс...")
-    }
-    else
-    {
-        if(year%4==0)
-        {
-            if(year%100==0&&year%400!=0)
+    } else {
+        if (year % 4 == 0) {
+            if (year % 100 == 0 && year % 400 != 0)
                 print("Год не високосный!")
             else
                 print("Год високосный!")
-        }
-        else
-        {
+        } else {
             print("Год не високосный!")
         }
     }
 
 
-
 }
-fun Azino777(){
+
+fun Azino777() {
     var Cash = 1000.0
     var Bet = readLine()!!.toDouble()
     var user_choise = ""
     var f = 0
 
-    print("Вас приветствует КАЗИНО!\n" +
-            "Тута можно проиграться в хлам, не играйте с нами.\n" +
-            "Спасибо, что Вы с нами!\n")
+    print(
+        "Вас приветствует КАЗИНО!\n" +
+                "Тута можно проиграться в хлам, не играйте с нами.\n" +
+                "Спасибо, что Вы с нами!\n"
+    )
 
 }
 
 
-fun Randomize()
-{
+fun Randomize() {
     /*print("Условие задачи: Ввести строку и узнать ее длину.\n" +
             "В зависимости от длины строки вывести 3 разных сообщения\n" +
             "для длинной средней и короткой строки.\n")
@@ -253,22 +258,56 @@ fun Randomize()
         "Миша",
         ")",
         "(",
-
-
-        "Михаил",)
+        "Михаил",
+    )
 
     var rand = names.random()
     var quantity = (10..25).random()
     print("$rand делает $quantity раз")
+}
 
+fun For1() {
+    println(
+        "For1. Даны: число для вывода(num) и количество выводов числа(num): quantity (quantity > 0)." +
+                "Вывести quantity раз число num.\n"
+    )
+    print("Введите число: ")
+    var num = readLine()!!.toDouble()
+    print("Введите количество выводов: ")
+    var quantity = readLine()!!.toInt()
 
+    for (i in 1..quantity) {
+        println("$num")
+    }
+}
 
+fun For2() {
+    println(
+        "For2. Даны два целых числа begin и end (begin < end). Вывести в порядке возрастания все\n" +
+                "целые числа, расположенные между begin и end (включая сами числа begin и end), а\n" +
+                "также количество этих чисел."
+    )
+    print("Введите начальное число: ")
+    var begin = readLine()!!.toInt()
+    print("Введите конечное число: ")
+    var end = readLine()!!.toInt()
+    var num_counter = 0
 
+    if (begin < end) {
+        for (i in begin..end) {
+            print("$i ")
+            num_counter++
+        }
+    } else {
+        for (i in begin downTo end) {
+            print("$i ")
+            num_counter++
+        }
+    }
+    println("\nКоличество чисел: $num_counter")
 
 
 }
-
-
 
 
 
