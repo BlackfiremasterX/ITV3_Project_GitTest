@@ -232,9 +232,37 @@ fun Azino777(){
 
 fun Randomize()
 {
+    /*print("Условие задачи: Ввести строку и узнать ее длину.\n" +
+            "В зависимости от длины строки вывести 3 разных сообщения\n" +
+            "для длинной средней и короткой строки.\n")
+
     var string = "1234567890qwertyuiop[asdfghjkl;zxcvbnm,"
     var string_lenth = string.length
     println(string_lenth)
+    if(string_lenth in 1..10)
+        println("Коротыш")
+    if(string_lenth in 10..20)
+        println("Коротыш")
+    if(string_lenth in 20..30)
+        println("Коротыш")*/
+
+    var names = arrayOf(
+        "Артем",
+        "Илья П",
+        "Илья ",
+        "Миша",
+        ")",
+        "(",
+        "Михаил",)
+
+    var rand = names.random()
+    var quantity = (10..25).random()
+    print("$rand делает $quantity раз")
+
+
+
+
+
 
 }
 
