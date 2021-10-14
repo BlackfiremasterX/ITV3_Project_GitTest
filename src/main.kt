@@ -253,6 +253,7 @@ fun Randomize()
         "Миша",
         ")",
         "(",
+
         "Михаил",)
 
     var rand = names.random()
